@@ -126,8 +126,6 @@ function deletePrevious() {
   }
 }
 
-console.log(deletePrevious);
-
 function resetCalculator() {
   calculator.displayValue = "0";
   calculator.firstOperand = null;
