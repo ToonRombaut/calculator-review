@@ -75,6 +75,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 1s ease-in-out; /* transition property needs to be on element itself, not on :hover selector. Won't work with background : linear-gradient() function  */
 }
 
 .button:hover {
@@ -83,7 +84,6 @@ body {
     rgba(255, 255, 255, 0.648) 10%,
     rgba(42, 123, 156, 0.8) 80%
   );
-  transition-duration: 1000ms;
 }
 
 .all-clear {
