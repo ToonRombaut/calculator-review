@@ -86,7 +86,6 @@ function handleOperator(nextOperator) {
 
   if (operator && calculator.waitingForSecondOperand) {
     calculator.operator = nextOperator;
-    console.log(calculator);
     return;
   }
 
@@ -103,7 +102,6 @@ function handleOperator(nextOperator) {
 
   calculator.waitingForSecondOperand = true;
   calculator.operator = nextOperator;
-  console.log(calculator);
 }
 
 function calculate(firstOperand, secondOperand, operator) {
@@ -131,5 +129,4 @@ function resetCalculator() {
   calculator.firstOperand = null;
   calculator.waitingForSecondOperand = false;
   calculator.operator = null;
-  console.log(calculator);
 }
